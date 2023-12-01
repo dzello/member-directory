@@ -10,16 +10,16 @@ export default function Header() {
     <header className="flex gap-x-6 justify-between items-center p-6 mx-auto w-full max-w-[80%] lg:px-8">
       <Link className="flex" href="/">
         <Image
-          className="hidden w-auto h-28 dark:block"
-          src="/brand-icon-light.svg"
+          className="hidden w-auto h-10 dark:block"
+          src="/classic-logotype-light.svg"
           alt="Home"
           width={50}
           height={50}
         />
 
         <Image
-          className="block w-auto h-28 dark:hidden"
-          src="/brand-icon-dark.svg"
+          className="block w-auto h-10 dark:hidden"
+          src="/classic-logotype-dark.svg"
           alt="Home"
           width={50}
           height={50}
@@ -27,16 +27,31 @@ export default function Header() {
       </Link>
 
       <div className="flex flex-1 gap-x-6 justify-end items-center">
-        {session ? (
-          ""
-        ) : (
-          <Link
-            className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
-            href="/preview"
-          >
-            Explore Members
-          </Link>
-        )}
+        <Link
+          className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
+          href="/"
+        >
+          Home
+        </Link>
+        <Link
+          className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
+          href="/events"
+        >
+          Events
+        </Link>
+        <Link
+          className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
+          href="/about"
+        >
+          About
+        </Link>
+        <Link
+          className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
+          href="/members"
+        >
+          Members
+        </Link>
+        <div />
 
         <Signin />
       </div>

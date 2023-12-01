@@ -4,8 +4,8 @@ import Head from "next/head";
 export default function DefaultHead() {
   return (
     <Head>
-      <title>Member Directory</title>
-      <link rel="icon" type="image/svg+xml" href="/brand-logo-background.png" />
+      <title>DM Dinner Club | 📩</title>
+      <link rel="icon" type="image/svg+xml" href="/logomark-light.png" />
     </Head>
   );
 }
