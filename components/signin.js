@@ -9,7 +9,7 @@ export default function Signin() {
     return (
       <button
         onClick={() => signOut()}
-        className="bg-brand-accent focus:bg-brand-accent-highlight hover:bg-brand-accent-highlight focus-visible:outline-brand-accent-highlight py-2 px-3 text-base font-semibold text-white rounded-md shadow-sm focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-2"
+        className="bg-brand-accent focus:bg-brand-accent-highlight hover:bg-brand-accent-highlight focus-visible:outline-brand-accent-highlight py-2 px-3 text-base font-semibold text-white whitespace-nowrap rounded-md shadow-sm focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-2"
       >
         Sign out <span aria-hidden="true">&rarr;</span>
       </button>

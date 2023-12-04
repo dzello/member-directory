@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="overflow-hidden flex justify-between items-center p-6 mx-auto w-full sm:max-w-[80%]">
-      <Link className="hidden sm:flex" href="/">
+      <Link className="hidden cursor-pointer lg:flex" href="/">
         <Image
           className="hidden w-auto h-10 dark:block"
           src="/classic-logotype-light.svg"
@@ -24,7 +24,7 @@ export default function Header() {
         />
       </Link>
 
-      <div className="flex flex-1 gap-x-6 items-center sm:justify-end">
+      <div className="flex flex-1 gap-x-6 items-center lg:justify-end">
         <Link
           className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
           href="/"
