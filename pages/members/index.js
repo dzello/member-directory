@@ -15,7 +15,7 @@ export default function Members({ initialMembers, initialFeatured }) {
             DM Dinner Club Members
           </h1>
 
-          <p className="text-brand-dark-highlight dark:text-brand-light-highlight mt-6 text-lg leading-8">
+          <p className="text-brand-dark-highlight dark:text-brand-light-highlight mt-2 text-lg leading-8">
             Browse the directory of members below. Find your name to update your
             profile information. Thank you!
           </p>
