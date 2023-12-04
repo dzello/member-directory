@@ -16,7 +16,6 @@ export default function Home() {
           frameborder="0"
           allowfullscreen=""
           aria-hidden="false"
-          tabindex="0"
           className="border-brand-dark/10 dark:border-brand-light/10 rounded-md border-4"
         ></iframe>
         <div>

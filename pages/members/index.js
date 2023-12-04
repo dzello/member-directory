@@ -9,21 +9,21 @@ export default function Members({ initialMembers, initialFeatured }) {
 
   return (
     <LayoutAuthenticated>
-      <div className="px-6 py-24 mx-auto sm:py-32 lg:px-8">
-        <section className="mx-auto max-w-2xl sm:text-center">
+      <div className="px-6 mx-auto sm:py-8 lg:px-8">
+        <section className="mx-auto max-w-lg sm:text-center">
           <h1 className="text-brand-dark dark:text-brand-light text-3xl font-bold tracking-tight sm:text-4xl">
-            Meet DM Dinner Club Members
+            DM Dinner Club Members
           </h1>
 
           <p className="text-brand-dark-highlight dark:text-brand-light-highlight mt-6 text-lg leading-8">
-            This is your space to find others in your community. Meet other
-            members, engage in the dialogue, and explore the community!
+            Browse the directory of members below. Find your name to update your
+            profile information. Thank you!
           </p>
         </section>
 
         <AdminControls setMembers={setMembers} />
 
-        <MemberList title="Featured Guests" members={featured} />
+        <MemberList title="Organizers & Featured Guests" members={featured} />
 
         <MemberList title="All Members" members={members} />
       </div>

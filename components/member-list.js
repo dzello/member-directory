@@ -13,7 +13,7 @@ export default function MemberList({ members, title, preview, listClasses }) {
 
   return (
     <>
-      <h2 className="text-brand-dark dark:text-brand-light mt-20 text-2xl font-bold tracking-tight sm:text-3xl">
+      <h2 className="text-brand-dark dark:text-brand-light mt-10 text-2xl font-bold tracking-tight sm:text-3xl">
         {title}
       </h2>
 
