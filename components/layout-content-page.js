@@ -9,7 +9,7 @@ export default function LayoutContentPage({ children }) {
       <Head />
       <Header />
 
-      <main className="max-w-[80%] w-full flex flex-col grow justify-center">
+      <main className="sm:max-w-[80%] px-8 sm:px-0 w-full flex flex-col grow justify-center">
         {children}
       </main>
 

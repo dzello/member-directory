@@ -19,7 +19,7 @@ export default function Home() {
             height={341 / 1.25}
           />
         </div>
-        <div className="flex flex-col gap-4 text-lg">
+        <div className="dark:text-brand-light-highlight flex flex-col gap-4 text-lg">
           <p>
             In 2022, Kyle sent cold DMs to a few Paris-based VCs with a focus on
             content and community building. After the first dinner everyone
@@ -42,7 +42,10 @@ export default function Home() {
         <div>
           <span className="pr-1">🧑‍🍳</span>
           {"  "}
-          <Link href="/members" className="text-lg font-light hover:underline">
+          <Link
+            href="/members"
+            className="dark:text-brand-light-highlight text-lg font-light hover:underline"
+          >
             View our members &raquo;
           </Link>
         </div>

@@ -2,13 +2,11 @@ import Image from "next/image";
 import React from "react";
 import Signin from "./signin";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 
 export default function Header() {
-  const { data: session } = useSession();
   return (
-    <header className="flex gap-x-6 justify-between items-center p-6 mx-auto w-full max-w-[80%] lg:px-8">
-      <Link className="flex" href="/">
+    <header className="overflow-hidden flex justify-between items-center p-6 mx-auto w-full sm:max-w-[80%]">
+      <Link className="hidden sm:flex" href="/">
         <Image
           className="hidden w-auto h-10 dark:block"
           src="/classic-logotype-light.svg"
@@ -26,7 +24,7 @@ export default function Header() {
         />
       </Link>
 
-      <div className="flex flex-1 gap-x-6 justify-end items-center">
+      <div className="flex flex-1 gap-x-6 items-center sm:justify-end">
         <Link
           className="text-brand-dark dark:text-brand-light justify-end text-xl font-light hover:underline focus:underline"
           href="/"
@@ -53,7 +51,9 @@ export default function Header() {
         </Link>
         <div />
 
-        <Signin />
+        <div className="hidden sm:block">
+          <Signin />
+        </div>
       </div>
     </header>
   );

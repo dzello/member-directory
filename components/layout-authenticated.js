@@ -26,7 +26,7 @@ export default function LayoutAuthenticated({ children }) {
       <Head />
       <Header />
 
-      <main className="max-w-[80%] w-full">{children}</main>
+      <main className="sm:max-w-[80%] w-full">{children}</main>
 
       <Footer />
     </div>

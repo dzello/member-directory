@@ -7,7 +7,7 @@ export default function Home() {
   const height = 220;
   return (
     <LayoutContentPage>
-      <div className="flex px-6 mx-auto sm:flex-col sm:gap-y-12 lg:px-8">
+      <div className="flex flex-col gap-y-12 px-6 mx-auto lg:px-8">
         <section className="mx-auto text-center">
           <Image
             className="hidden dark:inline-block"
@@ -24,7 +24,7 @@ export default function Home() {
             height={height}
           />
         </section>
-        <section className="mx-auto max-w-md sm:text-center">
+        <section className="mx-auto max-w-md text-center">
           <p className="text-brand-dark-highlight dark:text-brand-light-highlight mt-6 text-xl leading-8">
             Hosting founders, operators, investors and creators who put a
             premium on community.

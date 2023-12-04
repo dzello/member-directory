@@ -23,7 +23,7 @@ export default function Home() {
           {"  "}
           <Link
             href="https://lu.ma/dmdinnerclub"
-            className="text-lg font-light hover:underline"
+            className="dark:text-brand-light-highlight text-lg font-light hover:underline"
             target="_blank"
           >
             Click here to visit our Luma page
