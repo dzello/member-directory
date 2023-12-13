@@ -2,6 +2,7 @@ import { useState } from "react";
 import LayoutAuthenticated from "../../components/layout-authenticated";
 import AdminControls from "../../components/admin-controls/admin-controls";
 import MemberList from "../../components/member-list";
+import { NextSeo } from "next-seo";
 
 export default function Members({ initialMembers, initialFeatured }) {
   const [members, setMembers] = useState(initialMembers);
@@ -9,6 +10,12 @@ export default function Members({ initialMembers, initialFeatured }) {
 
   return (
     <LayoutAuthenticated>
+      <NextSeo
+        title="Members"
+        openGraph={{
+          url: `${process.env.NEXTAUTH_URL}/members`,
+        }}
+      />
       <div className="px-6 mx-auto sm:py-8 lg:px-8">
         <section className="mx-auto max-w-lg sm:text-center">
           <h1 className="text-brand-dark dark:text-brand-light text-3xl font-bold tracking-tight sm:text-4xl">

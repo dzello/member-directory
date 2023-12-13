@@ -1,10 +1,17 @@
 import React from "react";
 import LayoutContentPage from "../../components/layout-content-page";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <LayoutContentPage>
+      <NextSeo
+        title="Events"
+        openGraph={{
+          url: `${process.env.NEXTAUTH_URL}/events`,
+        }}
+      />
       <section className="flex flex-col gap-10 mx-auto sm:text-center">
         <h1 className="text-brand-dark-highlight dark:text-brand-light-highlight mt-6 text-4xl font-bold leading-8">
           Event Calendar

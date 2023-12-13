@@ -1,21 +1,22 @@
 export default {
-  defaultTitle: "DM Dinner Club Member Directory | Powered by Orbit",
+  defaultTitle: "DM Dinner Club",
+  titleTemplate: "%s | DM Dinner Club",
   description:
-    "Discover who's attending the DM Dinner Club. Connect, network, and engage with attendees, and explore their social profiles all in one place.",
-  canonical: "https://dmdinner.club/",
+    "Hosting founders, operators, investors and creators who put a premium on community.",
   twitter: {
     cardType: "summary",
     handle: "@RoiStartup",
   },
   openGraph: {
     type: "website",
-    url: "https://dmdinner.club/",
-    title: "DM Dinner Club Member Directory | Powered by Orbit",
+    url: process.env.NEXTAUTH_URL,
+    defaultTitle: "DM Dinner Club",
+    titleTemplate: "%s | DM Dinner Club",
     description:
-      "Discover who's attending the DM Dinner Club. Connect, network, and engage with attendees, and explore their social profiles all in one place.",
+      "Hosting founders, operators, investors and creators who put a premium on community.",
     images: [
       {
-        url: `https://dmdinner.club/brand-logo-background.png`,
+        url: `${process.env.NEXTAUTH_URL}/brand-logo-background.png`,
         width: 200,
         height: 200,
         alt: "DM Dinner Club - Established 2022",
@@ -25,7 +26,7 @@ export default {
   additionalLinkTags: [
     {
       rel: "icon",
-      href: `https://dmdinner.club/brand-logo-background.png`,
+      href: `${process.env.NEXTAUTH_URL}/brand-logo-background.png`,
     },
   ],
   additionalMetaTags: [
