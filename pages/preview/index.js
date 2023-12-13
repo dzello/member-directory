@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LayoutContentPage from "../../components/layout-content-page";
 import MemberList from "../../components/member-list";
+import { NextSeo } from "next-seo";
 
 export default function Preview({ initialFeatured, initialMembers }) {
   const [featured] = useState(initialFeatured);
@@ -11,6 +12,12 @@ export default function Preview({ initialFeatured, initialMembers }) {
 
   return (
     <LayoutContentPage>
+      <NextSeo
+        title="Members"
+        openGraph={{
+          url: `${process.env.NEXTAUTH_URL}/preview`,
+        }}
+      />
       <div className="px-6 w-full lg:px-8">
         <section className="mx-auto max-w-2xl sm:text-center">
           <h1 className="text-brand-dark dark:text-brand-light text-3xl font-bold tracking-tight sm:text-4xl">
