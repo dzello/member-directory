@@ -66,7 +66,7 @@ export default function Form({ setEditState, member, setError, setSuccess }) {
         name="bio"
         id="bio"
         className="text-brand-dark ring-brand-light-highlight block py-1.5 px-2 mb-2 w-full rounded-md border-0 ring-1 ring-inset shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-600 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-        placeholder="Hi, I'm Delete..."
+        placeholder="Hi, I'm..."
         value={bio}
         onChange={(e) => setBio(e.target.value)}
       ></textarea>
